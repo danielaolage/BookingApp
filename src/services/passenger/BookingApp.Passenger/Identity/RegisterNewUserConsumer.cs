@@ -1,9 +1,9 @@
-﻿using BookinAppDio.Passenger.Data;
-using BookingAppDio.Bus.Contracts;
-using BookingAppDio.Core.Generator;
+﻿using BookingApp.Passenger.Data;
+using BookingApp.Bus.Contracts;
+using BookingApp.Core.Generator;
 using MassTransit;
 
-namespace BookinAppDio.Passenger.Identity
+namespace BookingApp.Passenger.Identity
 {
     public class RegisterNewUserConsumer : IConsumer<UserCreated>
     {

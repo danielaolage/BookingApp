@@ -1,6 +1,6 @@
-﻿using BookinAppDio.Passenger.Passengers.Models;
+﻿using BookingApp.Passenger.Passengers.Models;
 
-namespace BookinAppDio.Passenger.Dtos
+namespace BookingApp.Passenger.Dtos
 {
     public class PassengerResponseDto
     {

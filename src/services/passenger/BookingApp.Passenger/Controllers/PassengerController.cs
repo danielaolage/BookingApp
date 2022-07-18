@@ -1,10 +1,10 @@
-﻿using BookinAppDio.Passenger.Application.CompleteRegisterPassenger;
-using BookinAppDio.Passenger.Application.GetPassengerById;
+﻿using BookingApp.Passenger.Application.CompleteRegisterPassenger;
+using BookingApp.Passenger.Application.GetPassengerById;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookinAppDio.Passenger.Controllers
+namespace BookingApp.Passenger.Controllers
 {
     [Route("api/passengers")]
     [ApiController]

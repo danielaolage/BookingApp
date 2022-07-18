@@ -10,16 +10,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["src/services/passenger/BookinAppDio.Passenger/BookinAppDio.Passenger.csproj", "src/services/passenger/BookinAppDio.Passenger/"]
-RUN dotnet restore "src/services/passenger/BookinAppDio.Passenger/BookinAppDio.Passenger.csproj"
+COPY ["src/services/passenger/BookingApp.Passenger/BookingApp.Passenger.csproj", "src/services/passenger/BookingApp.Passenger/"]
+RUN dotnet restore "src/services/passenger/BookingApp.Passenger/BookingApp.Passenger.csproj"
 COPY . .
-WORKDIR "/src/src/services/passenger/BookinAppDio.Passenger"
-RUN dotnet build "BookinAppDio.Passenger.csproj" -c Release -o /app/build
+WORKDIR "/src/src/services/passenger/BookingApp.Passenger"
+RUN dotnet build "BookingApp.Passenger.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "BookinAppDio.Passenger.csproj" -c Release -o /app/publish
+RUN dotnet publish "BookingApp.Passenger.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "BookinAppDio.Passenger.dll"]
+ENTRYPOINT ["dotnet", "BookingApp.Passenger.dll"]

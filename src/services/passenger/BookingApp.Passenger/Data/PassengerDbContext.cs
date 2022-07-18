@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace BookinAppDio.Passenger.Data
+namespace BookingApp.Passenger.Data
 {
     public class PassengerDbContext : DbContext
     {

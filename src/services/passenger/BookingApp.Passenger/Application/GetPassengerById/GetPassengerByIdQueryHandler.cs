@@ -1,10 +1,10 @@
-﻿using BookinAppDio.Passenger.Data;
-using BookinAppDio.Passenger.Dtos;
-using BookingAppDio.Core.CQRS;
+﻿using BookingApp.Passenger.Data;
+using BookingApp.Passenger.Dtos;
+using BookingApp.Core.CQRS;
 using MapsterMapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookinAppDio.Passenger.Application.GetPassengerById
+namespace BookingApp.Passenger.Application.GetPassengerById
 {
         public class GetPassengerQueryByIdHandler : IQueryHandler<GetPassengerByIdQuery, PassengerResponseDto>
         {

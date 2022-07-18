@@ -1,4 +1,4 @@
-﻿namespace BookinAppDio.Passenger.Passengers.Models
+﻿namespace BookingApp.Passenger.Passengers.Models
 {
     public enum PassengerType
     {

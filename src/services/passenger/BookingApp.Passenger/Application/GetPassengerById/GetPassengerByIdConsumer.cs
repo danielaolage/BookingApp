@@ -1,9 +1,9 @@
-﻿using BookingAppDio.Bus.Contracts;
+﻿using BookingApp.Bus.Contracts;
 using Mapster;
 using MassTransit;
 using MediatR;
 
-namespace BookinAppDio.Passenger.Application.GetPassengerById
+namespace BookingApp.Passenger.Application.GetPassengerById
 {
     public class GetPassengerByIdConsumer : IConsumer<GetPassengerByIdRequest>
     {

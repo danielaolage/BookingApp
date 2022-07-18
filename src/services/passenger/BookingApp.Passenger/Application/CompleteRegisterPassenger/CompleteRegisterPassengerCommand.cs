@@ -1,9 +1,9 @@
-﻿using BookinAppDio.Passenger.Dtos;
-using BookinAppDio.Passenger.Passengers.Models;
-using BookingAppDio.Core.CQRS;
-using BookingAppDio.Core.Generator;
+﻿using BookingApp.Passenger.Dtos;
+using BookingApp.Passenger.Passengers.Models;
+using BookingApp.Core.CQRS;
+using BookingApp.Core.Generator;
 
-namespace BookinAppDio.Passenger.Application.CompleteRegisterPassenger
+namespace BookingApp.Passenger.Application.CompleteRegisterPassenger
 {
     public record CompleteRegisterPassengerCommand(string PassportNumber, PassengerType PassengerType, int Age) : ICommand<PassengerResponseDto>
     {

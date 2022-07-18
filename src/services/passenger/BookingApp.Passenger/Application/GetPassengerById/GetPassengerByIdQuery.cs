@@ -1,7 +1,7 @@
-﻿using BookinAppDio.Passenger.Dtos;
-using BookingAppDio.Core.CQRS;
+﻿using BookingApp.Passenger.Dtos;
+using BookingApp.Core.CQRS;
 
-namespace BookinAppDio.Passenger.Application.GetPassengerById
+namespace BookingApp.Passenger.Application.GetPassengerById
 {
     public record GetPassengerByIdQuery(long Id) : IQuery<PassengerResponseDto>;
     

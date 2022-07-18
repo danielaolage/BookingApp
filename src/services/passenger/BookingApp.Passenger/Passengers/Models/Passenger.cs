@@ -1,6 +1,6 @@
-﻿using BookingAppDio.Core.ModelsAggregate;
+﻿using BookingApp.Core.ModelsAggregate;
 
-namespace BookinAppDio.Passenger.Passengers.Models
+namespace BookingApp.Passenger.Passengers.Models
 {
     public class Passenger : Aggregate<long>
     {
